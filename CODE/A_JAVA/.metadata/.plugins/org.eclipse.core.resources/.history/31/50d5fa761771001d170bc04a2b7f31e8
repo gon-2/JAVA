@@ -1,0 +1,57 @@
+package com.mc.c_control;
+
+import java.util.Scanner;
+
+public class I_CoffeeManager {
+
+	public static void main(String[] args) {
+
+
+		// 잔고 10만원
+		// 아메리카노 판매가 3000
+		// 아메리카노 매입가 2000
+		// 아메리카노 재고 10개
+		// 아메리카노 안전재고 3
+
+		// 모카 판매가 4000
+		// 모카 매입가 3000
+		// 모카 재고 10개
+		// 모카 안전재고 3
+		
+		// 라뗴 판매가 5000
+		// 라뗴 매입가42000
+		// 라뗴 재고 10개
+		// 라뗴 안전재고 3
+		
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+			System.out.println("\n=========Menu=========");
+	         System.out.println("판매등록(1)");
+	         System.out.println("현황(2)");
+	         System.out.println("종료(3)");
+	         System.out.print("입력 : ");
+	         
+	         int inputMenu = sc.nextInt();
+	         
+	         if(inputMenu == 1) {
+	        	 
+	         }else if(inputMenu == 2) {
+	        	 
+	         }else if(inputMenu == 3) {
+	        	 System.out.println("종료합니다.");
+	        	 break;
+	        	 
+	         }else {
+	        	 System.out.println("알맞은 번호를 입력하세요.");
+	   
+	         }
+			
+			
+		}
+		
+		
+
+	}
+
+}

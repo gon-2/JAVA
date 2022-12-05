@@ -1,0 +1,28 @@
+package com.mc.g_override_overloading_B_overloding;
+
+public class Circle {
+	
+	//DTO : Data Transfer object
+	//데이터만을 다루기 위해 생성해는 클래스
+	private double radius;
+	
+	
+	
+	public Circle() {
+		super();
+	}
+	
+	public Circle(int radius) {
+		this();
+		this.radius = radius;
+	}
+
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+	
+}

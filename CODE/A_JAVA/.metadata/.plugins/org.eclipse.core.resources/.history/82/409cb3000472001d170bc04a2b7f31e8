@@ -1,0 +1,42 @@
+package com.mc.b_encapsulation;
+
+public class Coffee {
+	
+	//캡슐화 : 클래스 내부의 필드변수에 클래스 외부에서 직접적으로 접근하는 것을 막는것
+	
+	private String name; 
+	private int price;  
+	private int cost;   
+	private int stock;
+	private int safetyStock;
+	private int salesCnt;
+	
+	
+	
+	public Coffee() {
+		
+	}
+	
+	public Coffee(String name, int price, int cost, int stock, int safetyStock, int salesCnt) {
+		this.name = name;
+		this.price = price;
+		this.cost = cost;
+		this.stock = stock;
+		this.safetyStock = safetyStock;
+		this.salesCnt = salesCnt;
+	}
+
+	
+	// getter/setter 메서드 사용법
+	// getter : 필드변수의 값을 읽을때 사용 get + 필드변수명을 넣어야함   =>  getName()
+	// setter : 필드변수의 값을 넣거나 수정할때 사용    set + 필드변수명 => setName(String name)
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}

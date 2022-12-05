@@ -1,0 +1,39 @@
+package com.mc.d_encapsulation.after;
+
+public class Computer extends Product{
+	// 상속이란 부모클래스가 가진 속성, 메서드, 타입을 자식클래스에게 물려주는것\
+	// 자바에서 상속은 단일 상속만 가능함
+	// 클래스의 부모클래스는 하나만 존재한다.
+	
+	protected String cpu;
+	protected int ram;
+	
+	public Computer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Computer(String brand, String pName, int price, String cpu, int ram) {
+		super(brand, pName, price);
+		// TODO Auto-generated constructor stub
+	}
+	public String getCpu() {
+		return cpu;
+	}
+	public void setCpu(String cpu) {
+		this.cpu = cpu;
+	}
+	public int getRam() {
+		return ram;
+	}
+	public void setRam(int ram) {
+		this.ram = ram;
+	}
+	
+	@Override
+	public String toString() {
+		return "Computer [cpu=" + cpu + ", ram=" + ram + "]";
+	}
+	
+	
+	
+}

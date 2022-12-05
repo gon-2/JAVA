@@ -1,0 +1,150 @@
+package com.mc.c_control;
+
+import java.util.Scanner;
+
+public class I_CoffeeManager {
+
+	public static void main(String[] args) {
+
+
+		int balance = 100000; 				// 잔고 10만원
+		int salesPrice = 0; 				// 매출
+		int expences = 0;					// 지출
+		
+		int americanoPrice = 3000;		// 아메리카노 판매가 3000
+		int americanoCost= 2000;		// 아메리카노 매입가 2000
+		int americanoStock= 10;			// 아메리카노 재고 10개
+		int americanoSaftyStock= 3;		// 아메리카노 안전재고 3
+		int americanoSalesCnt= 0;		//아메리카노 판매량
+		
+		int mocaPrice = 3000;	// // 모카 판매가 4000
+		int mocaCost= 2000;		// // 모카 매입가 3000
+		int mocaStock= 10;		// // 모카 재고 10개
+		int mocaSaftyStock= 3;	// // 모카 안전재고 3
+		int mocaSalesCnt= 0;	//모카 판매량
+		
+		int lattePrice = 3000;	// // 라뗴 판매가 5000
+		int latteCost= 2000;	// // 라뗴 매입가42000
+		int latteStock= 10;		// // 라뗴 재고 10개
+		int latteSaftyStock= 3;	// // 라뗴 안전재고 3
+		int latteSalesCnt= 0;	//라뗴 판매량
+
+		
+		
+		
+		
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+			System.out.println("\n=========Menu=========");
+	         System.out.println("판매등록(1)");
+	         System.out.println("현황(2)");
+	         System.out.println("종료(3)");
+	         System.out.print("입력 : ");
+	         
+	         int inputMenu = sc.nextInt();
+	         
+	         if(inputMenu == 1) {
+	        	 // 음료 메뉴판
+	        	 System.out.println("\n아메리카노(1)");
+	             System.out.println("모카(2)");
+	             System.out.println("라떼(3)");
+	             
+	             System.out.print("\n * 판매한 커피코드 : ");
+	             int inputCode = sc.nextInt();
+	             System.out.print(" * 판매량 : ");
+	             int orderCnt = sc.nextInt();
+	        	 
+	             if(inputCode ==1) {
+					//주문량이 재고보다 적거나 같으면 판매 수량만큼 재고를 차감하고, 잔고에 판매 금액을 반영한다.
+	            	//잔고에 판매 금액을 반영한다
+	            	 if(orderCnt <= americanoStock) {
+	            		 americanoStock -= orderCnt;
+	            		 balance += americanoPrice * orderCnt;
+	            		 // 매출등록
+	            		 salesPrice += americanoPrice * orderCnt;
+	            		//커피 재고가 안전재고 미만이 되면 안전재고의 두 배 만큼 매입한다.
+		            	 if(americanoStock < americanoSaftyStock) {
+		            		 
+		            		 if(balance > americanoSaftyStock * americanoPrice) {
+		            			 americanoStock += americanoSaftyStock * 2;
+		            			 balance -= americanoSaftyStock * americanoPrice;  
+		            			 // 지출등록
+		            			 expences += americanoSaftyStock * americanoPrice; 
+		            		 }else {
+		            			 //잔고가 부족해 매입이 불가능하면 안전재고 매입을 취소한다.
+		            			 System.out.println(" [system:log] 잔고가 부족해 안전재고 확보에 실패하였습니다.");
+		            		 }
+		
+		            	 }
+		            	 
+		            	 System.out.println("\n 제품명 : 아메리카노");
+		            	 System.out.println(" 판매가 : " + americanoPrice);
+		            	 System.out.println(" 판매수량 : " + orderCnt);
+		            	 System.out.println(" 결제금액 : " + americanoPrice + orderCnt);
+		            	 System.out.println(" 남은재고 : " + americanoStock);
+	            		 
+	            	 }else {
+	            		 //주문량이 재고보다 많으면 주문을 취소한다.
+	            		 System.out.println("재고가 부족해 주문을 취소합니다.");
+	            		 continue;
+	            	 }
+					
+	            	 
+	             }else if(inputCode ==2) {
+	            	 //주문량이 재고보다 적거나 같으면 판매 수량만큼 재고를 차감하고, 잔고에 판매 금액을 반영한다.
+	            	 
+	            	 //커피 재고가 안전재고 미만이 되면 안전재고의 두 배 만큼 매입한다.
+	            	 
+	            	 //잔고가 부족해 매입이 불가능하면 안전재고 매입을 취소한다.
+	            	 
+	            	 //주문량이 재고보다 많으면 주문을 취소한다.
+	            	 
+	             }else if(inputCode ==3) {
+	            	 //주문량이 재고보다 적거나 같으면 판매 수량만큼 재고를 차감하고, 잔고에 판매 금액을 반영한다.
+	            	 
+	            	 //커피 재고가 안전재고 미만이 되면 안전재고의 두 배 만큼 매입한다.
+	            	 
+	            	 //잔고가 부족해 매입이 불가능하면 안전재고 매입을 취소한다.
+	            	 
+	            	 //주문량이 재고보다 많으면 주문을 취소한다.
+	            	 
+	             }else {
+	            	 System.out.println("올바른 메뉴를 선택해 주세요.");
+	            	 continue;
+	             }
+	             
+	             
+	             
+	        	 
+	        	 
+	        	 
+	        	 
+	         }else if(inputMenu == 2) {
+	        	 
+	        	 System.out.println("\n 아메리카노 재고 " + americanoStock +" | 판매량 : " + mocaSalesCnt);
+	        	 System.out.println("\n 모카 재고 " + mocaStock + " | 판매량 : " + americanoSalesCnt);
+	        	 System.out.println("\n 라뗴 재고 " + latteStock + " | 판매량 : " + latteSalesCnt);
+	        	 
+	        	 System.out.println("잔고 : " + balance + " | 매출 : " + salesPrice + " | 지출 : " + expences);
+	        	
+	        	 
+	         }else if(inputMenu == 3) {
+	        	 System.out.println("종료합니다.");
+	        	 break;
+	        	 
+	         }else {
+	        	 System.out.println("알맞은 번호를 입력하세요.");
+	   
+	         }
+			
+			
+		}
+		
+		
+
+	}
+
+}

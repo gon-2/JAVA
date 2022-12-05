@@ -1,0 +1,100 @@
+package com.mc.coffeemanager.service;
+
+public class Coffee {
+
+	private String name;
+	private int stock; // 재고
+	private int totalSaleseCnt; // 총판매량
+	private int safetyStock; // 안전재고
+	private int cost;
+	private int price;
+
+	public Coffee(String name, int stock, int totalSaleseCnt, int safetyStock, int cost, int price) {// const...useingfild
+
+		super();
+		this.name = name;
+		this.stock = stock;
+		this.totalSaleseCnt = totalSaleseCnt;
+		this.safetyStock = safetyStock;
+		this.cost = cost;
+		this.price = price;
+	}
+
+	public void offer(int orderCnt) {
+
+		deductStock(orderCnt);
+		totalSalesCnt += orderCnt;
+		
+		if(stock < safetyStock) {
+			addSafetyStock();
+		}
+	}
+
+	private void addSafetyStock() {
+		System.out.println("[system:log] 재고가 부족해 안전재고를 확보합니다.");
+		
+		Purchase purchase = new Purchase(this, safertyStock * 2);
+		
+		
+		
+	}
+
+	private void deductStock(int orderCnt) {
+		this.stock -= orderCnt;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getStock() {
+		return stock;
+	}
+
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
+
+	public int getTotalSaleseCnt() {
+		return totalSaleseCnt;
+	}
+
+	public void setTotalSaleseCnt(int totalSaleseCnt) {
+		this.totalSaleseCnt = totalSaleseCnt;
+	}
+
+	public int getSafetyStock() {
+		return safetyStock;
+	}
+
+	public void setSafetyStock(int safetyStock) {
+		this.safetyStock = safetyStock;
+	}
+
+	public int getCost() {
+		return cost;
+	}
+
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Coffee [name=" + name + ", stock=" + stock + ", totalSaleseCnt=" + totalSaleseCnt + ", safetyStock="
+				+ safetyStock + ", cost=" + cost + ", price=" + price + "]";
+	}
+
+}

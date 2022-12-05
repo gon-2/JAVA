@@ -1,0 +1,10 @@
+package com.mc.b_operator;
+
+public class C_산술연산자 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

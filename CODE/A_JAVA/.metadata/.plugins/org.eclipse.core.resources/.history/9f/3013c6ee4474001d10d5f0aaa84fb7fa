@@ -1,0 +1,28 @@
+package com.mc.g_override_overloading_B_overloding;
+
+public class Rectangle {
+	//DTO : Data Transfer object
+	//데이터만을 다루기 위해 생성해는 클래스
+	private double width;  //너비
+	private double height; //높이
+	
+	
+
+
+	public double getWidth() {
+		return width;
+	}
+	
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+	public void setWidth(double width) {
+		this.width = width;
+	}
+
+}

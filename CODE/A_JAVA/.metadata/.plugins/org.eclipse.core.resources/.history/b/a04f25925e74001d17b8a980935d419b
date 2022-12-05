@@ -1,0 +1,9 @@
+package com.mc.H_abstract;
+
+public class Figure {
+	
+	public double calArea() {
+		return 0.0;
+	}
+
+}

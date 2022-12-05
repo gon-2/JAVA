@@ -1,0 +1,13 @@
+package com.mc.b_operator;
+
+public class F_삼항연산자 {
+
+	public static void main(String[] args) {
+		
+		// 조건식 : 연산 결과가 논리값으로 나오는 식
+		// 삼항연산자 : 조건식 ? 참일때 연산 또는 값 : 거짓일때 연산 또는 값
+		
+		
+		
+	}
+}

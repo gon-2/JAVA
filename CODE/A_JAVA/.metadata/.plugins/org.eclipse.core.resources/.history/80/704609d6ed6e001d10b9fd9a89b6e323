@@ -1,0 +1,12 @@
+package com.mc.a_variable;
+
+public class B_상수 {
+	public static void main(String[] args) {
+		// 변수 : 값을 수정할 수 있다.
+		// 상수 : 초기화 이후 값을 수정할 수 없다.
+		// 상수를 만드는 방법
+		// 변수 앞에 final 예약어를 사용해 상수로 만들수 있다.
+		// 예약어 : 자바에서 특수한 용도로 미리 약속해둔 키워드
+		 
+	}
+}

@@ -1,0 +1,38 @@
+package com.mc.coffeemanager.service;
+
+public class Account {
+
+	private int balance;
+	private int salesVolumn; // 매출
+	private int expences; // 지출
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+	public int getSalesVolumn() {
+		return salesVolumn;
+	}
+
+	public void setSalesVolumn(int salesVolumn) {
+		this.salesVolumn = salesVolumn;
+	}
+
+	public int getExpences() {
+		return expences;
+	}
+
+	public void setExpences(int expences) {
+		this.expences = expences;
+	}
+
+	@Override
+	public String toString() {
+		return "Account [balance=" + balance + ", salesVolumn=" + salesVolumn + ", expences=" + expences + "]";
+	}
+
+}

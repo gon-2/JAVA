@@ -1,0 +1,9 @@
+package com.mc.g_override_overloadingA_override;
+
+public class Figure {
+	
+		public double calArea() {
+			return 0.0
+		}
+
+}

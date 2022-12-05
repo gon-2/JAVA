@@ -1,0 +1,12 @@
+package com.mc.coffeemanager.service;
+
+public class Account {
+	
+	private int balance;
+	private int salesVolumn;   // 매출
+	private int expences;      // 지출
+	
+	
+	
+	
+}

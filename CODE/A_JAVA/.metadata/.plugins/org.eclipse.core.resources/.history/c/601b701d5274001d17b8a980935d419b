@@ -1,0 +1,29 @@
+package com.mc.g_override_overloading.A_override;
+
+public class run {
+
+	public static void main(String[] args) {
+		
+		// 원과 사각형의 넓이를 구하는 코드를 작성하시되, 다형성을 이용하여 코드를 줄여보세요.
+		
+		//반지름이 5인 원의 넓이를 구하시오.
+		Circle circle = new Circle();
+		circle.setRadius(5);
+		
+		System.out.println(circle.getRadius());
+		
+		double area = circle.calArea();
+		System.out.println(area);
+		
+		//너비가 4 높이가 7인 직각사각형의 넓이를 구하시오.
+		Rectangle rect = new Rectangle();
+		
+		rect.setHeight(7);
+		rect.setWidth(4);
+		
+		double rectArea = rect.calArea();
+		System.out.println(rectArea);
+		
+
+	}
+}

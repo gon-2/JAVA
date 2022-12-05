@@ -1,0 +1,28 @@
+package com.mc.coffeemanager.presentation;
+
+import java.util.Scanner;
+
+import com.mc.coffeemanager.service.Account;
+import com.mc.coffeemanager.service.Coffee;
+import com.mc.coffeemanager.service.Sales;
+
+public class Menu {
+
+	Account account;
+	Sales sales;
+	Coffee[] coffees;
+	
+	Scanner sc = new Scanner(System.in);
+
+	public Menu(Account account, Sales sales, Coffee[] coffees) {
+		super();
+		this.account = account;
+		this.sales = sales;
+		this.coffees = coffees;
+	}
+	
+	
+	
+	
+	
+}

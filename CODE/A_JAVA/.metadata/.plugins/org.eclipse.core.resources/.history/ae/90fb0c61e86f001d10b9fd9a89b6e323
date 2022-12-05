@@ -1,0 +1,15 @@
+package com.mc.first;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hello World!");
+	
+		
+		byte number = 127;
+		number += 1;
+		System.out.println(number);
+	}
+
+}

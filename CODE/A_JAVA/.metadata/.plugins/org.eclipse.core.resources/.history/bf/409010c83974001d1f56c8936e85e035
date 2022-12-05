@@ -1,0 +1,60 @@
+package com.mc.f.classformat;
+
+public class Car {
+	
+	// 클래스 : 속성과 기능으로 이루어짐
+//	            필드와 지역으로 나누어짐
+	            
+	
+	//필드 : 지역이 아닌 영역을 필드라고 정의함, 메서드 바깥영역, 필드에 존재하는 것을(변수, 메서드) 클래스의 멤버라고 함
+	
+	// 필드에 선언되는 	변수 : 필드변수(멤버변수)
+	//                         값을 명시적으로 할당하지 않으면, JVM에 기분값으로 초기화됨
+//	                         인스턴스 변수 : non static변수, 클래스가 인스턴스화 되는 시점에 초기화 되는 변수, 
+//								같은 클래스 이더라도인스턴스마다 값이 개별적이다.
+	
+	
+//	                        클래스 변수 : static 변수, 클래스가 메모리에 올라가는 시점에 초기화 되는 변수
+//	                                        클래스의 인스턴스들이 모두 공유하는 값을 저장
+	
+	
+	
+	
+//	지역 : 메서드 내부, 메서드가 호출부에 의해서 호출되는 시점에 메모리에 올라가고
+//	         메서드 실행이 끝나고 호출부로 돌아가는 시점에 메모리에서 내려간다.
+	
+	
+//	매개변수 :" 호출부에서 전달하는 값(전달인자)을 받기위해 메서드의 선언부에 선언되는 변수
+//	지역변수 : 메서드 내부에서 선언되는 변수, 초기화를 해야지만 사용할 수 있다.ㅣ
+	
+	// 인스턴스 변수
+	private String name;
+	private String color;
+	private int speed;
+	
+	// 클래스 변수 : static
+	private static final int MAX_SPEED =250;
+	private static int afterServiceperiod;
+	
+//	초기화 순서
+//	인스턴스변수 : jvm기본값 > 직접 할당한 값 > 초기화 블록 > 생성자
+//	클래스 변수 : jvm 기본값 > 직접 할당한 값 > static 초기화 블록
+	{
+		System.out.println("JVM 기본값 확인" + name);
+		color = "red";
+		name = "산타페";
+		speed = 0;
+		
+		System.out.println("초기화 블록 이후 값 " + name);
+	}
+	
+	static {
+		System.out.println("JVM 기본값 확인" + afterServiceperiod);
+		afterServiceperiod = 24;
+		System.out.println("초기화 블록 이후 값 " + afterServiceperiod);
+		System.out.println("================================================================================");
+	}
+	
+	
+	
+}

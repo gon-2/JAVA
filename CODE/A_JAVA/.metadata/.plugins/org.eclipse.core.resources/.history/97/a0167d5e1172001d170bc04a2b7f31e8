@@ -1,0 +1,11 @@
+package com.mc.d_encapsulation.before;
+
+public class Desktup {
+	// 제조사, 상품명, 가격,cpu,ram,일체여부
+	private String brand;
+	private String pName;
+	private int price;
+	private String cpu;
+	private int ram;
+	private boolean allInOne;
+}

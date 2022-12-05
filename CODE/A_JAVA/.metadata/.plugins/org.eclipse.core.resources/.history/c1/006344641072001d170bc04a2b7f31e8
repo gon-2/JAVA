@@ -1,0 +1,10 @@
+package com.mc.d_encapsulation.before;
+
+public class TV{
+	
+	//제조사, 상품명, 가격,inch(크기)
+	private String brand;
+	private String pName;
+	private int price;
+	private int inch;
+}

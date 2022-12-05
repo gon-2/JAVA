@@ -1,0 +1,54 @@
+package com.mc.coffeemanager.presentation;
+
+import java.util.Scanner;
+
+import com.mc.coffeemanager.service.Account;
+import com.mc.coffeemanager.service.Coffee;
+import com.mc.coffeemanager.service.Sales;
+
+public class Menu {
+
+	Account account;
+	Sales sales;
+	Coffee[] drinks;
+	
+	Scanner sc = new Scanner(System.in);
+
+	public Menu(Account account, Sales sales, Coffee[] drinks) {
+		super();
+		this.account = account;
+		this.sales = sales;
+		this.drinks = drinks;
+	}
+	
+	
+	public void mainMenu() {
+		
+		while(true) {
+			System.out.println("\n=========Menu=========");
+			System.out.println("판매등록(1)");
+			System.out.println("현황(2)");
+			System.out.println("종료(3)");
+			System.out.print("입력 : ");
+			
+			int inputMenu = sc.nextInt();
+			
+			switch(inputMenu) {
+			case 1:
+				coffeeMenu();
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				
+				break;
+			default:
+				break;
+			}
+		}
+	}
+	
+	
+	
+}

@@ -1,0 +1,37 @@
+package com.mc.control;
+
+import java.util.Scanner;
+
+public class C_ifelseif {
+
+	public static void main(String[] args) {
+		// 다중 조건문
+		// 표현식
+		//if(조건식){실행코드}
+		//else if(조건식){실행코드}
+		//else if(B조건식){실행코드} -> A조건식에 일치하지 않는 경우 중에서 B조건식이 참인 경우 실행코드를 수행
+		//else if(C조건식){실행코드}
+		//else if(D조건식){실행코드}
+		//else if(E조건식){실행코드}
+		//else{실행코드}
+		
+		//testIfElseIf();
+	}
+
+	private static void testIfElseIf() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자를하나 입력하세요.");
+		int input = sc.nextInt();
+		
+		String comment = "";
+		
+		if(input > 0) {
+			comment = "양수";
+		}else if(input < 0) {
+			comment = "음수";
+		}else {
+			comment = "0";
+		}
+	}
+
+}

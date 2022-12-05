@@ -1,0 +1,22 @@
+package com.mc.first;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hello World!");
+	
+		// 5번 반복하는 do-while문
+		int i = 0;
+		do {
+			System.out.println("나를 죽이지 못하는 고통은 나를 강하게 만든다.");
+		}while(i < 5) {
+			break;
+		}
+		
+		
+		
+		
+	}
+
+}

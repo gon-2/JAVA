@@ -1,0 +1,10 @@
+package com.mc.coffeemanager.service;
+
+public class Purchase {
+// 판매는 고객이 전달한 주문을 수행하고 결제를 진행한느 것
+	
+	//결제를 반환하기때문에 Payment타입이 됨
+	public Payment takeOrder(Order order) {
+		return null;
+	}
+}

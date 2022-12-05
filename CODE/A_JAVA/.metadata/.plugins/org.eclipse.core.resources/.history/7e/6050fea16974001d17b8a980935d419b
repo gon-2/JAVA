@@ -1,0 +1,12 @@
+package com.mc.coffeemanager.service;
+
+public class Account {
+	
+	private int balance;
+	private int salesVolumn;
+	private int expences;
+	
+	
+	
+	
+}

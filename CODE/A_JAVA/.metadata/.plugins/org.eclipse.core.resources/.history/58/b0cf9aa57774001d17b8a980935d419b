@@ -1,0 +1,49 @@
+package com.mc.coffeemanager.service;
+
+public class Payment {
+	
+	private Order order;
+	private int payPrice;
+	private Account account;
+	
+	public Payment(Order order) {
+		super();
+		this.order = order;
+		this.payPrice = order.getOrderPrice();
+	}
+	
+	public void excute() {
+		account.registerSales(payPrice);
+	}
+
+	public Order getOrder() {
+		return order;
+	}
+
+	public void setOrder(Order order) {
+		this.order = order;
+	}
+
+	public int getPayPrice() {
+		return payPrice;
+	}
+
+	public void setPayPrice(int payPrice) {
+		this.payPrice = payPrice;
+	}
+
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+
+	
+	
+	
+	
+
+}

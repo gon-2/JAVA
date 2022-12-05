@@ -1,0 +1,39 @@
+package com.mc.a_variable;
+
+public class A_변수 {
+	
+	public static void main(String[] args) {
+		
+		// 자바의 기본형(primitice 타입)
+		//			논리형 : boolean
+		//          문자형 : char
+		//          숫자형 : byte, short, int, long, float, double
+		
+		
+		// 변수선언
+		
+		// 논리형
+		boolean bool; // 1byte
+		
+		// 문자형
+		char ch;
+		
+		//정수형(숫자형)
+		byte bnum;
+		short snum;
+		int inum;
+		long lnum;
+		
+		//실수형
+		float fnum;
+		double dnum;
+		
+		// 변수의 초기화 : 선언한 변수에 최초로 값을 할당하는 것
+		// 변수는 초기화 해야지만 사용할 수 있다.
+		bool = true;
+		System.out.println(bool);
+		
+		
+		
+	}
+}

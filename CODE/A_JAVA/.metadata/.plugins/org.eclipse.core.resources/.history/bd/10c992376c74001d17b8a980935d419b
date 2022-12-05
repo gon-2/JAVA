@@ -1,0 +1,15 @@
+package com.mc.coffeemanager.service;
+
+public class Payment {
+	private Order order;
+	private int payPrice;
+	private Account account;
+	public Payment(Order order, int payprice, Account account) {
+		super();
+		this.order = order;
+		this.payPrice = payprice;
+		this.account = account;
+	}
+	
+	
+}

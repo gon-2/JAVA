@@ -1,0 +1,13 @@
+package com.mc.d_encapsulation.before;
+
+public class SmartPhone {
+	
+	//제조사, 상품명, 가격,cpu,ram,통신사
+	private String brand;
+	private String pName;
+	private int price;
+	private String cpu;
+	private int ram;
+	private String mobileAgency;
+	
+}

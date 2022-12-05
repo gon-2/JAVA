@@ -1,0 +1,11 @@
+package com.mc.d_encapsulation.after;
+
+public class Run {
+
+	public static void main(String[] args) {
+
+		Computer com = new Computer("삼성", "라이젠", 50000, "i3", 4);
+
+	}
+
+}

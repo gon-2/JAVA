@@ -1,0 +1,31 @@
+package com.mc.f.classformat;
+
+public class Car {
+	
+	// 클래스 : 속성과 기능으로 이루어짐
+//	            필드와 지역으로 나누어짐
+	            
+	
+	//필드 : 지역이 아닌 영역을 필드라고 정의함, 메서드 바깥영역, 필드에 존재하는 것을(변수, 메서드) 클래스의 멤버라고 함
+	
+	// 필드에 선언되는 	변수 : 필드변수(멤버변수)
+	//                         값을 명시적으로 할당하지 않으면, JVM에 기분값으로 초기화됨
+	//                         인스턴스 변수 : non static변수, 클래스가 인스턴스화 되는 시점에 초기화 되는 변수, 
+//								같은 클래스 이더라도인스턴스마다 값이 개별적이다.
+	
+	
+	//                        클래스 변수 : static 변수, 클래스가 메모리에 올라가는 시점에 초기화 되는 변수
+//	                                        클래스의 인스턴스들이 모두 공유하는 값을 저장
+	
+	// 인스턴스 변수
+	private String name;
+	private String color;
+	private int speed;
+	
+	// 클래스 변수 : static
+	private static final int MAX_SPEED = 250;
+	private static int afterServiceperiod = 24;
+	
+	
+	
+}

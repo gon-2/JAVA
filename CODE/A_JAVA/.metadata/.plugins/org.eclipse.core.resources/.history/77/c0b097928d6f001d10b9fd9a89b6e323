@@ -1,0 +1,10 @@
+package com.mc.b_operator;
+
+public class G_문자열결합 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

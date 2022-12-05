@@ -1,0 +1,13 @@
+package com.mc.b_operator;
+
+public class H_복합대입연산자 {
+
+	public static void main(String[] args) {
+		//대입연산자와 다른 연산자를 함께 사용하면 복합대입 연산자.
+		
+		int num = 12;
+		num = num + 12;
+		
+	}
+
+}

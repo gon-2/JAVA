@@ -1,0 +1,13 @@
+package com.mc.d_encapsulation.before;
+
+public class Run {
+
+	public static void main(String[] args) {
+		//제조사, 상품명, 가격,inch(크기)
+		Desktop desktop = new Desktop("삼성", "울트라",2000000,"intel","11",true);
+		// 제조사, 상품명, 가격,cpu,ram,통신사
+		
+		// 제조사, 상품명, 가격,cpu,ram,일체여부
+	}
+
+}

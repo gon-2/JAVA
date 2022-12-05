@@ -1,0 +1,14 @@
+package com.mc.coffeemanager.service;
+
+public class Sales {
+	
+	public Payment takeOrder(Order order, Account account) {
+		
+		order.execute(account);
+		Payment payment = new Payment(order, account);
+		payment.excute();
+		
+		return payment;
+	}
+
+}

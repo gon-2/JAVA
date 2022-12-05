@@ -1,0 +1,20 @@
+package com.mc.g_override_overloading;
+
+public class Run {
+
+	public static void main(String[] args) {
+		
+		//반지름이 5인 원의 넓이를 구하시오
+		Circle cir = new Circle();
+		cir.setRadius(5);
+		System.out.println(cir.getRadius());
+		
+//		double area = cir.calArea();
+		
+		// 너비가 4 높이가 7인 직사각형의 넓이를 구하시오.
+		Rectangle rec = new Rectangle();
+		rec.setHeight(4);
+		rec.setWidth(7);
+		double carArea = rec.calArea();
+	}
+}

@@ -1,0 +1,21 @@
+package com.mc.c_control;
+
+public class E_while {
+
+	//[표현식]
+	//while(조건식){실행문}
+	//조건식이 참이면 실해오드를 반복
+	//조건식이 거짓이면 반복을 종료
+	
+	public static void main(String[] args) {
+		
+		int num = 0;
+		//무한반복문
+		while(num < 5) {
+			num++;
+			System.out.println("멈추지않아! 중요한 건 꺾이지 않는 마음");
+//			System.out.println(num);
+		}
+	}
+
+}

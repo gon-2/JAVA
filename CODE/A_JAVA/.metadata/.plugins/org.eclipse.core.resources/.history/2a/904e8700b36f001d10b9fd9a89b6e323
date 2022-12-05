@@ -1,0 +1,30 @@
+package com.mc.control;
+
+import java.util.Scanner;
+
+public class Quiez {
+
+	public static void main(String[] args) {
+		// 사용자에게 입력,수정,조회,삭제,종료 메뉴를 보여주는 메뉴창을 출력하고
+		// 사용자가 선택한 번호에 따라 알맞은 안내문구를 출력하시오
+		//
+		// 출력예시
+//	      1. 입력
+//	      2. 수정
+//	      3. 조회
+//	      4. 삭제
+//	      7. 종료
+//	      메뉴 번호 입력 : 1
+//	      입력메뉴가 선택되었습니다
+		
+		Scanner sc = new Scanner(System.in);
+		String snumber = sc.nextLine();
+		String select = "";
+		
+		if(snumber.equals("1")) {
+			select ()
+		}
+
+	}
+
+}

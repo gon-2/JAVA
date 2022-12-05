@@ -1,0 +1,11 @@
+package com.mc.a_modifier;
+
+public class StaticTest {
+
+	public static void main(String[] args) {
+		
+		//static
+		System.out.println(B_static.staticVal); //heap영역에 인스턴스변수의 공간을 확보하고 초기화
+		System.out.println();
+	}
+}

@@ -1,0 +1,9 @@
+package com.mc.g_override_overloading_B_overloding;
+
+public class AreaCalculator {
+
+	public static double carRectangleArea(Rectangle r) {
+		return r.getHeight() * r.getWidth();
+	}
+
+}

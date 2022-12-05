@@ -1,0 +1,60 @@
+package com.mc.coffeemanager.service;
+
+import java.time.LocalDateTime;
+
+public class Order {
+
+	private Coffee coffee; // 주문한 커피
+	private int orderCnt;
+	private LocalDateTime orderTime;
+	private int orderPrice;
+	private String orderTitle; // 주문명
+	
+	public void execute() {
+		
+		coffee.offer(orderCnt);
+	}
+
+	public Coffee getCoffee() {
+		return coffee;
+	}
+
+	public void setCoffee(Coffee coffee) {
+		this.coffee = coffee;
+	}
+
+	public int getOrderCnt() {
+		return orderCnt;
+	}
+
+	public void setOrderCnt(int orderCnt) {
+		this.orderCnt = orderCnt;
+	}
+
+	public LocalDateTime getOrderTime() {
+		return orderTime;
+	}
+
+	public void setOrderTime(LocalDateTime orderTime) {
+		this.orderTime = orderTime;
+	}
+
+	public int getOrderPrice() {
+		return orderPrice;
+	}
+
+	public void setOrderPrice(int orderPrice) {
+		this.orderPrice = orderPrice;
+	}
+
+	public String getOrderTitle() {
+		return orderTitle;
+	}
+
+	public void setOrderTitle(String orderTitle) {
+		this.orderTitle = orderTitle;
+	}
+	
+	
+
+}

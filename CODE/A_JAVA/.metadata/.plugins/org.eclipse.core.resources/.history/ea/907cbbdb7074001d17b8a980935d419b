@@ -1,0 +1,17 @@
+package com.mc.coffeemanager.service;
+
+public class Purchase {
+// 판매는 고객이 전달한 주문을 수행하고 결제를 진행한느 것
+
+	private Coffee coffee;
+	private int purchaseCnt;
+	private int budget;
+
+	public Purchase(Coffee coffee, int purchaseCnt) {
+		super();
+		this.coffee = coffee;
+		this.purchaseCnt = purchaseCnt;
+		this.budget = coffee.getCost() * purchaseCnt;
+	}
+
+}

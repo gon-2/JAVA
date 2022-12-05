@@ -1,0 +1,10 @@
+package com.mc.first;
+
+public class A_프린트 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

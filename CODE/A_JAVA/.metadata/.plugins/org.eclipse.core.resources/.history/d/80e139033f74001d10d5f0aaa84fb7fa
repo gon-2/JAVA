@@ -1,0 +1,29 @@
+package com.mc.g_override_overloadingA_override;
+
+public class Circle {
+	
+	private double radius;
+	
+	public void radius() {
+		super();
+
+	}
+	
+	public void radius(int radius) {
+		this.radius = radius;
+	}
+
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+	
+	public double carlArea() {
+		return Math.PI * radius * radius;
+	}
+	
+	
+}

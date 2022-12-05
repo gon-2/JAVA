@@ -1,0 +1,15 @@
+package com.mc.d_encapsulation.after;
+
+public class TV extends Product{
+	protected int inch;
+	
+	public TV() {
+		
+	}
+
+	public TV(int inch) {
+		super();
+		this.inch = inch;
+	}
+	
+}

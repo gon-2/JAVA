@@ -1,0 +1,10 @@
+package com.mc.control;
+
+public class B_ifelse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.mc.control;
+
+public class C_ifelseif {
+
+	public static void main(String[] args) {
+		// 다중 조건문
+		// 표현식
+		//if(조건식){실행코드}
+		//else if(조건식){실행코드}
+		//else if(B조건식){실행코드} -> A조건식에 일치하지 않는 경우 중에서 B조건식이 참인 경우 실행코드를 수행
+
+	}
+
+}

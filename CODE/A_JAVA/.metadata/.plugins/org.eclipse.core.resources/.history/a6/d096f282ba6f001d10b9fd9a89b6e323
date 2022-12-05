@@ -1,0 +1,28 @@
+package com.mc.c_control;
+
+import java.util.Scanner;
+
+public class G_branching {
+
+	public static void main(String[] args) {
+		
+		// 사용자로부터 문자열을 입력받아 출력하는 반복문을 작성하라
+		// 사용자로부터 end 라는 문자열을 입력받을 경우 반복문은 멈춘다.
+		
+		
+		
+		Scanner sc = new Scanner(System.in);
+		boolean flg = true;
+		
+		while(flg) {
+			String message = sc.nextLine();
+			if(!message.equals(message)) {
+				System.out.println(message);
+			}else {
+				System.out.println("프로그램을 종료합니다.");
+				flg = false;
+				
+			}
+		}
+	}
+}
